@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <script>
     let rand = Math.random();
+    let f, sec, th;
     
+    // Generating first word
+    if(rand<0.3333){ 
+      f="Crazy" ; 
+    } 
+    else if(rand>0.33 && rand<0.6666){
+       f="Professional" ; 
+    } 
+    else{ f="Minimalist" ; 
+
+    }
+    
+    //Generating second word
+    rand = Math.random();
+    if(rand<0.3333){ 
+      sec="Tech" ; 
+    } 
+    else if(rand>0.33 && rand<0.6666){
+       sec="Finance" ; 
+    } 
+    else{ sec="Health" ; 
+
+    }
+
+    // Generating third word
+    rand = Math.random();
+    if(rand<0.3333){ 
+      th="Startup" ; 
+    } 
+    else if(rand>0.33 && rand<0.6666){
+       th="Corporate" ; 
+    } 
+    else{ 
+      th="Freelancer" ; 
+
+
+    }
+
+    console.log(`${f} ${sec} ${th} `);
+    document.write(`${f} ${sec} ${th} `);
   </script>
   
-</body>
-</html>
+      </body>
+
+</html> 
